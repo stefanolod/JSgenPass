@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
     <head>
-        <script src="genera.js"></script>
+        <script src="generate.js"></script>
         <link rel="stylesheet" href="style.css">
-        <title>Generatore di Password</title>
-        <h1 class="titolo" id="Titolo_iniziale">Generatore di Password</h1>
+        <title>Password Generator</title>
+        <h1 class="titolo" id="initial_title">Password Generator</h1>
     </head>
     <body>
         <div class="square">
-            <input type="radio" name="simboli_o_senza" id="alf_num" value="alfanumerico">
-            <label for="alf_num">Alfanumerico &emsp;</label>
-            <input type="radio" name="simboli_o_senza" id="alf_num_sym" value="simboli">
-            <label for="alf_num_sym">Alfanumerico con simboli</label>
+            <input type="radio" name="sym_or_not" id="alf_num" value="alphanumeric">
+            <label for="alf_num">Alphanumeric &emsp;</label>
+            <input type="radio" name="sym_or_not" id="alf_num_sym" value="symbols">
+            <label for="alf_num_sym">Alphanumeric whith symbols</label>
             <hr>
-            <label for="n_caratteri">Numero: </label>
-            <input type="text" id="n_caratteri">
+            <label for="n_characters">Number of Characters: </label>
+            <input type="text" id="n_character">
             &nbsp;
-            <button onclick="genera()">Genera</button>
+            <button onclick="generate()">Generate</button>
             <hr>
-            <label for="password">Ecco la password: </label>
+            <label for="password">This is the password: </label>
             <input type="text" id="password" readonly>
         </div>
     </body>
