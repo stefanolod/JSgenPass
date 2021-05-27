@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <script src="genera.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Generatore di Password</title>
+        <h1 class="titolo" id="Titolo_iniziale">Generatore di Password</h1>
+    </head>
+    <body>
+        <div class="square">
+            <input type="radio" name="simboli_o_senza" id="alf_num" value="alfanumerico">
+            <label for="alf_num">Alfanumerico &emsp;</label>
+            <input type="radio" name="simboli_o_senza" id="alf_num_sym" value="simboli">
+            <label for="alf_num_sym">Alfanumerico con simboli</label>
+            <hr>
+            <label for="n_caratteri">Numero: </label>
+            <input type="text" id="n_caratteri">
+            &nbsp;
+            <button onclick="genera()">Genera</button>
+            <hr>
+            <label for="password">Ecco la password: </label>
+            <input type="text" id="password" readonly>
+        </div>
+    </body>
+</html>
