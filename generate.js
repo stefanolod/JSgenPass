@@ -16,9 +16,9 @@ function generate() {
 
     //The algorithm it's that choices a random cell inside the array where is the characters,
     //and randomly choiches if the next character will be a number, a lower case or a upper case.
-    if (scelta == 1){     
+    if (choice == 1){     
         for (i = 0; i != parseInt(n.value); ++i){
-            let l = Math.floor( Math.random() * 2);
+            let l = Math.floor( Math.random() * 3);
             if(l == 0){
                 p += lowercase.charAt(Math.floor( Math.random() * lowercase.length));
             }else if (l == 1) {
@@ -27,7 +27,7 @@ function generate() {
                 p += digits.charAt(Math.floor( Math.random() * digits.length));
             }
         }
-    }else if(scelta == 2){     
+    }else if(choice == 2){     
         const symbols = "@#$!%*?&_"; 
         for (i = 0; i != parseInt(n.value); ++i){
             let l = Math.floor( Math.random() * 4);
